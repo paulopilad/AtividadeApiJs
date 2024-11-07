@@ -1,0 +1,63 @@
+select{
+    width: 150px;
+}
+#data{
+    width: 75px;
+}
+.icones{
+    width: 30px;
+}
+th{
+    background-color: gray;
+}
+.container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.status {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.good {
+    background-color: green;
+}
+.info {
+    margin: 10px 0;
+}
+.info span {
+    display: inline-block;
+    width: 80px;
+    color: purple;
+}   .container {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.status {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+.good {
+    background-color: green;
+}
+.info {
+    margin: 10px 0;
+}
+.info span {
+    display: inline-block;
+    width: 80px;
+    color: purple;
+}
+#id{
+    color: white;
+    font-weight: bold;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Atividade API</title>
+</head>
+
+<body onload="estados(),data()">
+   <button id="save" onclick="salvarPDF()">SALVAR</button>
+
+   <div id="pdf">
+      <div id="bloco">
+         <div id="coletores"> <span>ESTADO:</span>
+            <select name="estados" id="estados" onchange="cidades()"></select>
+            <br>
+            <span>CIDADE:</span>
+            <select name="cidades" id="cidades" onchange="weather(),hour()"></select>
+            <br>
+            <input type="text" id="data" disabled>
+            <p id=""></p>
+         </div>
+         <div class="container">
+            <div class="status good"><p id="status"></p></div>
+            <div class="info">
+               <p id="co"></p>
+            </div>
+            <div class="info">
+               <p id="no2"></p>
+            </div>
+            <div class="info">
+               <p id="o3"></p>
+            </div>
+            <div class="info">
+               <p id="pm2_5"></p>
+            </div>
+            <div class="info">
+               <p id="pm10"></p>
+            </div>
+            <div class="info">
+               <p id="so2"></p>
+            </div>
+         </div>
+      </div>
+<hr>
+<p id="msg">
+
+</p>
+<hr>
+      <div id="tabela">
+         <table border="2" id="previsao">
+            <tr>
+               <th>Horário</th>
+               <th>Condição</th>
+               <th>Chuva<br>(%)</th>
+               <th>Temperatura <br>(ºC)</th>
+               <th>Sensação <br>(ºC)</th>
+               <th>Umidade <br> (%)</th>
+               <th>Vento <br>(Kph)</th>
+               <br>
+
+         </table>
+
+      </div>
+
+
+
+
+
+
+
+
+
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
